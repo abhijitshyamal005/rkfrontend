@@ -2,11 +2,13 @@ import  { useState } from 'react';
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
-import Loader from './components/Loader'; // Add a loader component
+import Loader from './components/Loader';
+// Add a loader component
+import Login from './Login.jsx';
 import './index.css';
 
 function App() {
-  const [user] = useState(true); // Track authenticated user
+  const [user] = useState(false); // Track authenticated user
   const [loading] = useState(false); // Loading state for loader
 
  
@@ -27,6 +29,7 @@ function App() {
           ) : (
             <div className="text-center mt-8">
               <h1 className="text-xl font-semibold">Please log in to access your dashboard</h1>
+              <Login/>
             </div>
           )}
         </div>
