@@ -5,6 +5,8 @@ import Dashboard from "./components/Dashboard";
 import Loader from './components/Loader';
 // Add a loader component
 import Login from './Login.jsx';
+import Login from './Signup.jsx';
+
 import './index.css';
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
             <div className="text-center mt-8">
               <h1 className="text-xl font-semibold">Please log in to access your dashboard</h1>
               <Login/>
+              <h1>If user does not exist then </h1>
+              <Signup/>
             </div>
           )}
         </div>
