@@ -6,7 +6,7 @@ import Loader from './components/Loader'; // Add a loader component
 import './index.css';
 
 function App() {
-  const [user] = useState(true); // Track authenticated user
+  const [user] = useState(false); // Track authenticated user
   const [loading] = useState(false); // Loading state for loader
 
  
