@@ -5,7 +5,7 @@ import Dashboard from "./components/Dashboard";
 import Loader from './components/Loader';
 // Add a loader component
 import Login from './Login.jsx';
-import Login from './Signup.jsx';
+import Signup from './Signup.jsx';
 
 import './index.css';
 
